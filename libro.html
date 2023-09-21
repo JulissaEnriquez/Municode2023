@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+        function verificar(){
+            // no vacios
+            let codigo = document.getElementsByTagName("codigo").value;
+            let nombre = document.getElementsByTagName("nombre").value;
+            let precio = document.getElementsByTagName("precio").value;
+            let paginas = document.getElementsByTagName("paginas").value;
+            if (codigo != "" && nombre != "" && precio != "" && paginas != ""){
+                if (paginas < 10){
+                    document.getElementById("mensaje").innerText = "Error: el minimo de paginas es 10";
+                }
+                if (precio < 5){
+                    document.getElementById("mensaje").innerText = "Error; el precio minimo es Q5.00";
+                }
+            }else {
+                document.getElementById("mensaje").innerText = "Error: hay un dato vacio";
+            }
+
+        }
+     </script>
+<forn>
+    <label for="codigo" >codigo </label><input type="text" id="codigo"/> <br>
+    <label for="nombre" >Nombre </label><input type="text" id="nombre"/> <br>
+    <label for="precio" >Precio </label><input type="text" id="precio"/> <br>
+    <label for="paginas" >Cantidad de paginas</label><input type="text" id="paginas"/> <br>
+    <div id="mensaje"></div>
+    <button id="aceptar" onclick="verificar()">Aceptar</button>
+
+</forn>
+
+
+
+</body>
+</html>

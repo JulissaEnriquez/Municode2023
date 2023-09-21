@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+        // variables
+        var nombre = new Array(10);
+        var nota = new Array(10);
+
+        for (let i = 0; i<5; i++){
+            nombre[i] = prompt("Ingrese el nombre ");
+            nota[i] = parseFloat(prompt("Ingrese la nota"));
+        }
+        document.write("monbres: "+nombres);
+        document.write("<br>nota: "+nota);
+
+        let mayor = nota[0];
+        let nombresMayor = nombres[0];
+
+        for (let v = 1; v<5; v++){
+            if (mayor < nota[v]){
+                mayor = nota[v];
+            
+            if (menor > nota[v]){
+               (menor = nota[v]);
+            }
+                npmbresMayor = nombres[v];
+            }
+        }
+        document.write("<h3>La nota "+nombresMayor+" es aprobada con "+mayor+" promedio</h3>");
+        
+
+
+        let menor = nota[0];
+        let nombresMenor = nombres[0];
+
+        for (let v = 1; v<5; v++){
+            if (menor > nota[v]){
+                menor = nota[v];
+                nombresMenor = nombres[v];
+            }
+        }
+        document.write("<h3>La nota "+nombresMenor+" es aprobado "+menor+" promedio</h3>");
+
+
+
+
+        // calculo de promedio
+        let suma = 0;
+        for (let i = 0; i<5; i++){
+            suma = suma + temps[i];
+        }
+        let promedio = suma / 5;
+        document.write("<h3>El promedio de las notas es "+promedio+"notas</h3>")
+
+
+    </script>
+</body>
+</body>
+</html>
