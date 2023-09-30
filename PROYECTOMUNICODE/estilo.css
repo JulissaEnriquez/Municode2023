@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+ }
+ 
+ body {
+     font-family: Arial, Helvetica, sans-serif;
+ }
+ 
+ .container {
+    max-width: 1200px;
+    margin: 0 auto;
+ }
+ .content {
+     min-height: 100px;
+     background: linear-gradient(
+        90deg,
+        rgb(30, 133, 146)0%,
+        rgb(49, 94, 145)70%
+ 
+     );
+ }.menu {
+     position: absolute;
+     top: 10px;
+     left: 0;
+     right: 0;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+ .logo {
+     font-size: 25px;
+     color: rgb(11, 12, 11);
+     text-transform: uppercase;
+     font-weight: bold;
+ }
+ .menu   .navbar ul li {
+     
+     
+     color: rgb(11, 12, 12);
+     text-transform: uppercase;
+     font-weight: bold;
+     position: relative;
+     transform: translate(-100%, -30%);
+     
+ }
+  
+ .menu  .navbar ul li a {
+     font-size: 80px;
+     padding: 20%;
+     color: #f30909;
+     display: block;
+     font-weight: bold;
+   
+     position: relative;
+     transform: translate(-350%, -00%);
+     }
+ 
+ 
+     .menu:checked ~ .navbar {
+         display: initial ;
+         position: absolute;
+     width: 200px;
+     height: 120px;
+     inset: 0;
+     margin: auto;
+     }
+
+     body{
+        background-color: #ffdd90;
+        background-image: url("lindos.jpg");
+      }
+ 
+      body{
+        background-color: #ffdd90;
+        background-image: url("peces.jpg");
+      }
+    
